@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class app{
+	public static void main(String[] args) throws Exception{
+		int ar1[] = new int[4];
+		int ar2[] = new int[4];
+		int ar3[] = new int[4];//declaração de arrays
+		Scanner ler = new Scanner(System.in);//declaração de um scanner de leitura, é usado o "ler" para scannear
+		int media1, media2, media3;//declaração de medias
+
+		System.out.println("digite suas notas:");
+		for(int i=0; i<4; i++){
+			System.out.println("Nota" + (i+1));
+			ar1[i] = ler.nextInt(); 
+		}//laço para ler as notas do aluno1
+		System.out.println("digite suas notas:");
+		for(int i=0; i<4; i++){
+			System.out.println("Nota" + (i+1));
+			ar2[i] = ler.nextInt(); 
+		}//laço para ler as notas do aluno2
+		System.out.println("digite suas notas:");
+		for(int i=0; i<4; i++){
+			System.out.println("Nota" + (i+1));
+			ar3[i] = ler.nextInt(); 
+		}//laço para ler as notas do aluno3
+		media1 = (ar1[0]*2+ar1[1]*2+ar1[2]*3+ar1[3]*3)/10;
+		media2 = (ar2[0]*2+ar2[1]*2+ar2[2]*3+ar2[3]*3)/10;
+		media3 = (ar3[0]*2+ar3[1]*2+ar3[2]*3+ar3[3]*3)/10;//medias ponderadas
+		System.out.println("Aluno1");
+		if(media1>=60){
+			System.out.println("Aprovado!!!");
+		}else{
+			System.out.println("Reprovado!!!");
+		}
+		System.out.println("Aluno2");
+	
+		if(media2>=60){
+			System.out.println("Aprovado!!!");
+		}else{
+			System.out.println("Reprovado!!!");
+		}
+		System.out.println("Aluno3");
+		if(media3>=60){
+			System.out.println("Aprovado!!!");
+		}else{
+			System.out.println("Reprovado!!!");
+		}//ifs para saber se o aluno reprova ou nn de acordo com a media ponderada
+ler.close();
+	}
+}//com matriz nn declarada
