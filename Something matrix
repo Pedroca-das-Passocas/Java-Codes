@@ -1,0 +1,11 @@
+public class newapp {
+    public static void main(String[] args) {
+        final int TAM_MAT = 7;
+        char mat[][] = new char[TAM_MAT][7];//tamanho da matriz
+        for(int l=0; l<TAM_MAT;l++){
+            for(int c = 0; c<TAM_MAT; c++){
+                mat[l][c] = '*';
+            }
+        }
+    }
+}
